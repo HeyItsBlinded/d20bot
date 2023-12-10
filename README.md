@@ -1,2 +1,2 @@
-# screenplaybot
-code behind a twitter bot that tweets action lines and dialogue from notable screenplays
+# d20bot
+rolls a d20 die and reports result
