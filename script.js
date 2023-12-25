@@ -4,7 +4,7 @@ const rollHistory = [];
 
 function rollD20() {
     const roll = Math.floor(Math.random() * 20) + 1;
-    rollHistory.push({ type: 'straight roll', value: roll });
+    rollHistory.push({ type: 'straight', value: roll });
     return roll;
 }
 
@@ -12,7 +12,7 @@ function rollWithAdvantage() {
     const roll1 = rollD20();
     const roll2 = rollD20();
     const result = Math.max(roll1, roll2);
-    rollHistory.push({ type: 'w/ advantage', value: result });
+    rollHistory.push({ type: 'advantage', value: result });
     return result;
 }
 
@@ -20,7 +20,7 @@ function rollWithDisadvantage() {
     const roll1 = rollD20();
     const roll2 = rollD20();
     const result = Math.min(roll1, roll2);
-    rollHistory.push({ type: 'w/ disadvantage', value: result });
+    rollHistory.push({ type: 'disadvantage', value: result });
     return result;
 }
 
@@ -35,7 +35,7 @@ buttons.forEach(button => {
             randomNumber = rollWithDisadvantage();
         }
 
-        displayText.textContent = `rolled a ${randomNumber}`;
+        displayText.textContent = `${randomNumber}`;
         
         // Update roll history on the page
         const historyList = document.getElementById('historyList');

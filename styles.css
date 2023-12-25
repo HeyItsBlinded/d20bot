@@ -43,6 +43,12 @@ p {
     background-color: slategray; /* Darker background color on hover */
 }
 
+/* Styles for p with ID displayText */
+#displayText {
+    font-size: 20px; /* Example: Set font size */
+    color: #333; /* Example: Set text color */
+}
+
 /* Styles for ul with ID historyList */
 #historyList {
     /* Your CSS styles here */
