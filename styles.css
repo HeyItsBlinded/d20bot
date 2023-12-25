@@ -6,8 +6,9 @@ html, body {
 
 /* Apply styles to elements */
 body {
+    text-align: center;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: lightblue;
     color: #333;
 }
 
@@ -21,4 +22,31 @@ p {
     line-height: 1.5;
 }
 
-/* Add your additional styles below */
+/* Basic button styles */
+.myButton {
+    padding: 10px 20px; /* Set padding */
+    font-size: 16px; /* Set font size */
+    background-color: navy; /* Set background color */
+    color: white; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hover effect */
+.myButton:hover {
+    background-color: slategray; /* Darker background color on hover */
+}
+
+/* Styles for ul with ID historyList */
+#historyList {
+    /* Your CSS styles here */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+/* Example: Styling list items within historyList */
+#historyList li {
+    /* Your CSS styles for list items */
+    margin-bottom: 5px;
+}
